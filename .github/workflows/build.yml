@@ -33,8 +33,8 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (Corne Left)
-        run: west build -s zmk/app -b nrf52840_m2 -- -DSHIELD=corne_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: West Build (BLe Chiffre)
+        run: west build -s zmk/app -b ble_chiffre -d ble_chiffre -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: BLe Chiffre DTS File
         if: ${{ always() }}
         run: cat -n ble_chiffre/zephyr/ble_chiffre.dts.pre.tmp
