@@ -43,7 +43,7 @@
     default_layer {
             bindings = <
     &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
-    &hm LSHIFT A &lt FUNC S &lt NAV D &lt L_MOD F &kp G &kp H &lt R_MOD J &lt MOUSE K &lt NUM L &mt LSHIFT SEMI
+    &hm LSHIFT A &lt FUNC S &lt NAV D &lt L_MOD F &kp G &kp H &lt R_MOD J &lt MOUSE K &lt NUM L &hm LSHIFT SEMI
     &kp Z &hm LCTRL X &hm LGUI C &hm LALT V &kp B &kp N &hm LALT M &hm LGUI COMMA &hm LCTRL PERIOD &kp SLASH
     &kp LA(LSHIFT) &kp BACKSPACE &lt ALWAYS SPACE &kp LC(LA(LSHIFT))
             >;
@@ -105,7 +105,7 @@
 
     always_layer {
             bindings = <
-    &trans &trans &kp SEMI &kp ESCAPE &trans &trans &trans &trans &trans &bt BT_CLR
+    &trans &trans &kp COLON &kp ESCAPE &trans &trans &trans &trans &trans &bt BT_CLR
     &trans &trans &trans &kp ENTER &trans &trans &kp LGUI &trans &trans &trans
     &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
     &trans &kp TAB &none &trans
