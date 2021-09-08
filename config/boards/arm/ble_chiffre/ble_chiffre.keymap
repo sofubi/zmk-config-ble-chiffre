@@ -30,7 +30,7 @@
             bindings = <
     &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
     &mt LSHIFT A &lt FUNC S &lt NAV D &lt L_MOD F &kp G &kp H &lt R_MOD J &lt MOUSE K &lt NUM L &mt LSHIFT SEMI
-    &kp Z &kp LC(X) &kp LG(C) &kp LA(V) &kp B &kp N &kp LA(M) &kp LG(COMMA) &kp LC(PERIOD) &kp SLASH
+    &kp Z &mt LCTRL X &mt LGUI C &mt LALT V &kp B &kp N &mt LALT M &mt LGUI COMMA &mt LCTRL PERIOD &kp SLASH
     &kp LA(LSHIFT) &kp BACKSPACE &lt ALWAYS SPACE &kp LC(LA(LSHIFT))
             >;
         };
