@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
 #define FUNC 1
@@ -29,7 +30,7 @@
             bindings = <
     &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
     &mt LSHIFT A &lt FUNC S &lt NAV D &lt L_MOD F &kp G &kp H &lt R_MOD J &lt MOUSE K &lt NUM L &mt LSHIFT SEMI
-    &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH
+    &kp Z &kp LC(X) &kp LG(C) &kp LA(V) &kp B &kp N &kp LA(M) &kp LG(COMMA) &kp LC(PERIOD) &kp SLASH
     &kp LA(LSHIFT) &kp BACKSPACE &lt ALWAYS SPACE &kp LC(LA(LSHIFT))
             >;
         };
@@ -90,7 +91,7 @@
 
     always_layer {
             bindings = <
-    &trans &trans &trans &kp ESCAPE &trans &trans &trans &trans &trans &trans
+    &trans &trans &trans &kp ESCAPE &trans &trans &trans &trans &trans &bt BT_CLEAR
     &trans &trans &trans &kp ENTER &trans &trans &kp LGUI &trans &trans &trans
     &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
     &trans &kp TAB &none &trans
