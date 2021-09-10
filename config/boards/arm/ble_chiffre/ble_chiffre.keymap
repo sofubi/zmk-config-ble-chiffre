@@ -103,8 +103,8 @@
     colemak_layer {
             bindings = <
     &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI
-    &kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
-    &kp X &kp C &kp D &kp V &kp Z &kp K &kp H &kp COMMA &kp DOT &kp SLASH
+    &hm LSHIFT A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &hm LSHIFT O
+    &kp X &hm LCTRL C &hm LGUI D &hm LALT V &kp Z &kp K &hm LALT H &hm LGUI COMMA &hm LCTRL DOT &kp SLASH
     &trans &trans &trans &trans
             >;
         };
@@ -113,7 +113,7 @@
             bindings = <
     &trans &trans &kp COLON &kp ESCAPE &trans &trans &trans &bt BT_NXT &bt BT_PRV &bt BT_CLR
     &trans &trans &trans &kp ENTER &trans &trans &kp LGUI &trans &trans &trans
-    &tog COLEMAK &tog DEFAULT &trans &trans &trans &trans &trans &trans &trans &trans
+    &tog COLEMAK &trans &trans &trans &trans &trans &trans &trans &trans &trans
     &trans &kp TAB &none &trans
             >;
         };
