@@ -9,13 +9,13 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define FUNC 1
-#define NAV 2
-#define L_MOD 3
-#define R_MOD 4
-#define MOUSE 5
-#define NUM 6
-#define COLEMAK 7
+#define COLEMAK 1
+#define FUNC 2
+#define NAV 3
+#define L_MOD 4
+#define R_MOD 5
+#define MOUSE 6
+#define NUM 7
 #define ALWAYS 8
 
 / {
@@ -42,6 +42,15 @@
     &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
     &hm LSHIFT A &lt FUNC S &lt NAV D &lt L_MOD F &kp G &kp H &lt R_MOD J &lt MOUSE K &lt NUM L &hm LSHIFT SEMI
     &kp Z &hm LCTRL X &hm LGUI C &hm LALT V &kp B &kp N &hm LALT M &hm LGUI COMMA &hm LCTRL PERIOD &kp SLASH
+    &kp LA(LSHIFT) &kp BACKSPACE &lt ALWAYS SPACE &kp LC(LA(LSHIFT))
+            >;
+        };
+
+    colemak_layer {
+            bindings = <
+    &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI
+    &hm LSHIFT A &lt FUNC R &lt NAV S &lt L_MOD T &kp G &kp M &lt R_MOD N &lt MOUSE E &lt NUM I &hm LSHIFT O
+    &kp Z &hm LCTRL X &hm LGUI C &hm LALT D &kp V &kp K &hm LALT H &hm LGUI COMMA &hm LCTRL DOT &kp SLASH
     &kp LA(LSHIFT) &kp BACKSPACE &lt ALWAYS SPACE &kp LC(LA(LSHIFT))
             >;
         };
@@ -96,15 +105,6 @@
     &trans &kp N7 &kp N8 &kp N9 &trans &trans &trans &trans &trans &trans
     &kp N0 &kp N4 &kp N5 &kp N6 &trans &trans &trans &trans &none &trans
     &trans &kp N1 &kp N2 &kp N3 &trans &trans &trans &trans &trans &trans
-    &trans &trans &trans &trans
-            >;
-        };
-
-    colemak_layer {
-            bindings = <
-    &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMI
-    &hm LSHIFT A &lt FUNC R &lt NAV S &lt L_MOD T &kp G &kp M &lt R_MOD N &lt MOUSE E &lt NUM I &hm LSHIFT O
-    &kp Z &hm LCTRL X &hm LGUI C &hm LALT D &kp V &kp K &hm LALT H &hm LGUI COMMA &hm LCTRL DOT &kp SLASH
     &trans &trans &trans &trans
             >;
         };
